@@ -1,0 +1,26 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+<form action="{{ url_for('fn_save_listtodo') }}" method="post">
+    <div class="container" style="max-width: 1293px;">
+        <div class="row">
+            <div class="col header-col1">
+                <a class="btn btn-primary float-right btn-home" style="background-color: #1A1A40; border: none; font-family: 'Montserrat'; font-size: 12px;font-weight: bold;" href="{{ url_for('fn_home') }}"><i class="fa-solid fa-house-user"></i></i> COME BACK HOME</a>
+            </div>
+        </div>
+        <div class="row div-tasktodo-main">
+            <h1 id="id-task-todo"> <i class="fa-solid fa-list-check"></i> Adding a new List To DO </h1>
+        </div>
+         <div class="row div-tasktodo-main">
+            <input id="id-write-task" name="desc_listtodo" autofocus="autofocus" autocomplete="off" placeholder="&nbsp; &nbsp; &nbsp; Write here the name of your new List To do and press enter to save..." required="required" type="text">
+        </div>
+    </div>
+</form>
+
+{% endblock %}
+
+</body>
+</html>

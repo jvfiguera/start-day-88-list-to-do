@@ -1,0 +1,282 @@
+html,body{
+background-color: #FEFBE7;
+height: 900px;
+margin: 0;
+padding: 0;
+}
+
+.header-col1{
+    background-color: #040303;
+    width: 100%;
+    height: 50px;
+    padding: 1px;
+    justify-content: center;
+  }
+
+.header-col2{
+      justify-content: center;
+      height: 900px;
+    }
+
+#left-col2{
+  background: #4D4C7D;
+  max-width: 400px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.right-col2{
+  background-color: #FFF6EA;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.listtodo-master{
+  font-family: 'Shadows Into Light';
+  font-weight:  bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: white;
+
+}
+
+#id-listtodo{
+  font-family: 'Montserrat';
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.fa-arrow-right-from-bracket {
+    position: absolute;
+    right: 10px;
+    padding: 2px 10px;
+}
+
+.btn:hover {
+  background: #401b70;
+  background-image: -webkit-linear-gradient(top, #401b70, #733e96);
+  background-image: -moz-linear-gradient(top, #401b70, #733e96);
+  background-image: -ms-linear-gradient(top, #401b70, #733e96);
+  background-image: -o-linear-gradient(top, #401b70, #733e96);
+  background-image: linear-gradient(to bottom, #AB46D2, #5534A5);
+  text-decoration: none;
+}
+
+#id-task-todo{
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    font-family: 'Shadows Into Light';
+    font-weight: lighter;
+    color: white;
+    margin-left: 20px;
+
+}
+
+.div-tasktodo-main {
+    background-color: #A85CF9;
+    height: 60px;
+}
+/* CHECK BOX */
+/* Customize the label (the container) */
+.container-check {
+  display: block;
+  position: relative;
+  top: 50px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Shadows Into Light';
+  font-size: 35px;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  border-color: #B4E197;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+  background-color: #B4E197;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+  background-color: #B4E197;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.task-actions{
+  position: relative;
+  left: 800px;
+  top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#id-write-task{
+  font-family: 'Montserrat';
+  font-size: 30px;
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-weight: bolder;
+  outline: none;
+}
+
+.form-task-det{
+    border: 5px;
+}
+
+.btn-add {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+}
+
+.btn-add:hover ,.btn-manage:hover:hover,.btn-home:hover{
+  background: #03070a;
+  background-image: -webkit-linear-gradient(top, #03070a, #41484d);
+  background-image: -moz-linear-gradient(top, #03070a, #41484d);
+  background-image: -ms-linear-gradient(top, #03070a, #41484d);
+  background-image: -o-linear-gradient(top, #03070a, #41484d);
+  background-image: linear-gradient(to bottom, #03070a, #41484d);
+  text-decoration: none;
+}
+
+.btn-manage {
+    position: absolute;
+    top: 12px;
+    right: 140px;
+}
+
+.btn-home {
+    position: absolute;
+    top: 12px;
+    right: 140px;
+}
+
+.h1-listtodo{
+    position: absolute;
+    top: 12px;
+    width: 500px;
+}
+
+.div-manage-lists{
+    position: relative;
+    top: 20px;
+}
+
+.ul-list {
+  background-color: #FFFFFF;
+  border: 1px solid #eef0f5;
+  border-radius: 30px;
+  border-width: 0.1px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #9A86A4;
+  font-weight: lighter;
+  position: relative;
+  float: left;
+  list-style-type:none
+}
+
+.btn-list {
+  background-color: #FFFFFF;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #9A86A4;
+  font-weight: lighter;
+  position: relative;
+  float: left;
+}
+.btn-list:hover{
+  color: #A85CF9;
+}
+.lists li a {
+    text-decoration: none;
+}
+.img-x{
+  position: relative;
+  top: 1px;
+  float: right;  
+}
+
+.fa-xmark{
+color: #9D9D9D;
+position: relative;
+top: 4px;
+}
+
+.fa-xmark:hover{
+color: #FF5D5D;
+}
+
+.total-tasks {
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #645E9D;
+    color: white;
+    font-size: 16px;
+    vertical-align: text-top;
+    margin-left: 10px;
+}
